@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Every Unicode Character</title>
+</head>
+
+<body>
+  <div id="u"></div>
+  <script>
+    let string = "";
+    for (let i = 0; i <= 0x10FFFF; i++) {
+      const unicodeCharacter = String.fromCodePoint(i);
+      string += unicodeCharacter;
+    }
+
+    document.getElementById("u").innerHTML = string;
+  </script>
+
+</body>
+
+</html>
